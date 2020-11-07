@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+<link rel='stylesheet' type='text/css' href='./styles.css'/>
+<title>Luke's HTML and CSS Cheatsheet</title>
+
+</head>
+
+<body>
+<nav>
+    <ul>
+        <li><a href='#html-setup'>Setting Up index.html</a></li>
+        <li><a href='#css-setup'>Setting Up styles.css</a></li>
+    </ul>
+</nav>
+<header>
+    <h1>Luke's Cheatsheet to HTML and CSS</h1>
+</header>
+<main>
+    <article id='html-setup'>
+        <h1>Setting Up Your index.html</h1>
+        <h2>The Boilerplate Code</h2>
+            <p>There are several bits of code that go in most any html site. The first is at the very top, where we let the browser know what type of file it is by inserting <code>&lt!DOCTYPE html&gt</code>. Remember this at the very beginning!</p> 
+            <p>The next bit may seem obvious, but is easy to forget: the <code>&lthtml&gt</code> tag! Make sure that this tag (opening and closing!) wraps around all your html content. It is also good to remember to add a language tag, like <code>&lthtml lang='en'&gt</code> for English, to help with SEO and with user needing translations to know what language your page is in!</p>
+        <h2>The Head</h2>
+            <p>The head is the part of your html file that stores the relevant data for browsers and the page to function! This is where you put links, the title to display the name in the browser tab, etc!</p>
+            <p>First things first, lets get your CSS hooked up! To do that, just put a little piece of code into your head that looks like <code>&ltlink rel='stylesheet' type='text/css' href='./styles.css'/&gt</code>, making sure your directory path to your stylesheet is correct. EZ-PZ!</p>
+            <p>Don't forget your <code>&lttitle&gt</code>! Just put text between the opening and closing tags, and that will show up as your browser tab text!</p>
+            <p>Lots of other stuff can go here (hit F12 on any given website and look at the head, it is LOADED), but for now this is everything we need to get this cheatsheet website rolling!</p>
+        <h2>The Body</h2>
+            <p>The Body Tag contains all of the content you want to display onto the page! Using semantic HTML, the body itself can be broken up into several bits:</p>
+            <ul>
+                <li>The Header (Different than The Head!)</li>
+                <li>The Nav Bar</li>
+                <li>Main and Articles</li>
+                <li>Asides</li>
+                <li>The Footer</li>
+                <li>And Probably More!</li>
+            </ul>
+            <p>That's a lotta stuff and I want to get back to practicing React, so we're gonna go through em real quick-like starting NOW!</p>
+            <h3>The Header</h3>
+            <p>Top of your Page! Put you banner and whatever here! Wrap it with <code>&ltheader&gt</code>!</p>
+            <h3>The Nav Bar</h3>
+            <p>Put links to navigate around your multi-page website! Or even on the same page if it's long! Wrap with <code>&ltnav&gt</code>, likes to contain lists!</p>
+            <h3>Main and Articles</h3>
+            <p>Use <code>&ltmain&gt</code> to wrap around the main part of your webpage! Only use it once! And use <code>&ltarticle&gt</code> to wrap any relevant connected bits together! This is mostly used for context, especially helpful for accessibility!</p>
+            <h3>Asides</h3>
+            <p>Want to include a little extra info that's not necessary to understand the article? Use an <code>&ltaside&gt</code> tag!</p>
+            <aside>Asides can be very useful for random fun facts, such as: did you know, raw pineapple has digestive enzymes that try to eat you while you're eating it!!</aside>
+            <h3>The Footer</h3>
+            <p>Kinda like a header but at the bottom! Put career links, copyright info, whatever down here, stuff people might want to find but isn't so important it needs to be shown off. Wrap it with a <code>&ltfooter&gt</code> tag.</p>
+            <h3>And More!</h3>
+            <p>There's <code>&ltcode&gt</code>, <code>&ltstrong&gt</code>, and lots of other stuff probably! Google it you nerd!</p>
+        <h2>Let's Talk About Tables</h2>
+        <p>Crazy Stuff! To make one, start by wrapping with a <code>&lttable&gt</code>, then each row is wrapped by <code>&lttr&gt</code>. In each row you put the data in <code>&lttd&gt</code>, except the headers which are in <code>&ltth&gt</code>.</p>
+    </article>
+    <article id='css-setup'>
+        <h1>Setting Up Your styles.css</h1>
+        <h2>The Boilerplate Code</h2>
+        <p>There really isn't any! Just start slapping down selectors for all your fun stuff. You can use the <code>*{}</code> selector to set base-level stuff you want everything to have, if that's sometimes useful! The <code>html {}</code> and <code>body {}</code> selectors can be useful in similar ways! Try setting <code>font-size</code> in one of these, and using <code>em</code> instead of <code>px</code> later, makes it way easy to rescale stuff for changing screen sizes!</p>
+        <h2>Selectors</h2>
+        <p> Check em out:</p>
+        <table>
+            <tr>
+                <th>Specification</th>
+                <th>How to Write as CSS selector</th>
+            </tr>
+            <tr>
+                <td>Tag (eg <code>&ltp&gt</code>)</td>
+                <td>p</td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td><code>.class</code></td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td><code>#ID</code></td>
+            </tr>
+        </table>
+
+        <h2>Oh man y'all CSS is tricky</h2>
+        <p>Just did the styling for this website and hoo boy can it be crazy. Lots of rules to write and things to align, but it's not so hard and google can always help :)</p>
+        <p>Few useful things to remember:</p>
+        <ul>
+            <li><code>margin: 0 auto</code> to center blocks, useful!</li>
+            <li>Set your font size in <code>body</code>!</li>
+            <li><code>vertical-align: middle</code> is for <strong>inline elements only!</strong></li>
+        </ul>
+    </article>
+</main>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
