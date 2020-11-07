@@ -16,4 +16,4 @@ Project is created with:
 * CSS
 
 ## Setup
-To run this project, download the files into the same directory, and open index.htm in the web browser of your choice.
+To run this project, download the files into the same directory, and open index.html in the web browser of your choice.
